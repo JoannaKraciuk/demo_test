@@ -15,7 +15,7 @@ test.describe('User login to Demobank', () => {
     await page.getByTestId('password-input').fill(userPassword);
     await page.getByTestId('login-button').click();
 
-
+    // Assert
     await expect(page.getByTestId('user-name')).toHaveText(expectedUserName);
   });
 
