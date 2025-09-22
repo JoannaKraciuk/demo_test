@@ -1,9 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('User login to Demobank', () => {
+test.describe.only('User login to Demobank', () => {
   test.beforeEach(async ({ page }) => {
-    const url = 'https://demo-bank.vercel.app/';
-    await page.goto(url);
+    await page.goto('/')
   });
 
   test('successful login with correct credentials', async ({ page }) => {
