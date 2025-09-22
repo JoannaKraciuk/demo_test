@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe.only('User login to Demobank', () => {
+test.describe('User login to Demobank', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
   });
