@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:pulpit:headed": "npm run test tests/pulpit.spec.ts -- --headed",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "format": "npx prettier --write ."
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
